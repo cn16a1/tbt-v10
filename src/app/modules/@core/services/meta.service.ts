@@ -31,6 +31,7 @@ export class MetaService {
       { property: 'og:image:url', content: '' },
       { property: 'og:image:secure_url', content: '' },
       { property: 'og:image:alt', content: '' },
+      { property:"og:image:type", content:"image/jpg" },
 
       { property: 'pin:media', content: '' },
       { property: 'pin:url', content: '' },
