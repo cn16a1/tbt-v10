@@ -1,5 +1,6 @@
 import 'zone.js/dist/zone-node';
 import { enableProdMode } from '@angular/core';
+import 'reflect-metadata';
 // Express Engine
 import { ngExpressEngine } from '@nguniversal/express-engine';
 // Import module map for lazy loading
@@ -266,9 +267,9 @@ app.use(
 //     }
 //   });
 // });
-app.get('*', (req, res) => {
-  res.render(join(DIST_FOLDER, 'index.html'), { req });
-});
+// app.get('*', (req, res) => {
+//   res.render(join(DIST_FOLDER, 'index.html'), { req });
+// });
 
 // // Start up the Node server
 // app.listen(PORT, () => {
