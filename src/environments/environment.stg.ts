@@ -86,7 +86,7 @@ export const environment = {
     AccessTokenGrantType: "authorization_code",
     RefreshTokenGrantType: "refresh_token",
     configClient: {
-      client_id: "3cfd9150-1407-4992-be5a-79c041fde4db",
+      client_id: "ccec4996-a8ad-4925-b572-d3be3bc290a5",
       client_secret: "123456"
     }
   }
