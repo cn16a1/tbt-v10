@@ -82,19 +82,7 @@ export class MetaService {
       default:
         // Case Detail page
         const transformedDetailList = this.transformListDetail(inputList);
-        // this.meta.addTags(transformedDetailList);
-        this.meta.updateTag({
-          property: 'og:image', content: 'https://leads.ourbetterworld.org/sites/default/files/2019-08/DSC02211_edited%20%281%29.jpg?itok=LlKmIDyS',
-          
-        });
-        this.meta.updateTag({
-          property: 'og:image:url', content: 'https://leads.ourbetterworld.org/sites/default/files/2019-08/DSC02211_edited%20%281%29.jpg?itok=LlKmIDyS',
-          
-        });
-        this.meta.updateTag({
-          property: 'og:image:secure_url', content: 'https://leads.ourbetterworld.org/sites/default/files/2019-08/DSC02211_edited%20%281%29.jpg?itok=LlKmIDyS',
-          
-        });
+        this.meta.addTags(transformedDetailList);
         this.currentList = transformedDetailList;
         break;
     }
