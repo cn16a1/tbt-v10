@@ -251,7 +251,7 @@ app.get(
 
 app.use(
   rendertron.makeMiddleware({
-    proxyUrl: 'https://seo-dot-obw-platform.appspot.com/render',
+    proxyUrl: 'https://seo-dot-obw-platform.appspot.com/render/',
     userAgentPattern: BOT_UA_PATTERN
   })
 );
@@ -267,9 +267,9 @@ app.use(
 //     }
 //   });
 // });
-// app.get('*', (req, res) => {
-//   res.render(join(DIST_FOLDER, 'index.html'), { req });
-// });
+app.get('*', (req, res) => {
+  res.render(join(DIST_FOLDER, 'index.html'), { req });
+});
 
 // // Start up the Node server
 // app.listen(PORT, () => {
