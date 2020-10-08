@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from "@angular/common";
 import { Component, Inject, OnInit, PLATFORM_ID } from "@angular/core";
-import { Title } from "@angular/platform-browser";
+import { Meta, Title } from "@angular/platform-browser";
 import { NbDialogService } from "@nebular/theme";
 import { WINDOW } from "@ng-toolkit/universal";
 import {
@@ -9,6 +9,7 @@ import {
 } from "../../dialogs";
 import { ShareGroupService } from "../../services/share-group.service";
 import { TrackingService } from "../../services/tracking.service";
+
 
 @Component({
   selector: "k-share",
@@ -28,7 +29,8 @@ export class ShareComponent implements OnInit {
     private shareGroupService: ShareGroupService,
     @Inject(WINDOW) private window: Window,
     @Inject(PLATFORM_ID) private platformId: Object,
-    private trackingService: TrackingService
+    private trackingService: TrackingService,
+    private meta:Meta
   ) {}
 
   ngOnInit() {
@@ -63,6 +65,7 @@ export class ShareComponent implements OnInit {
   }
 
   shareSocialTracking(name: string) {
+    console.log(this.meta.getTag("property='og:image'"));
     this.trackingService.shareSocialTracking(name);
   }
 

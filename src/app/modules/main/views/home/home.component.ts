@@ -28,6 +28,8 @@ import {
 import { environment } from '../../../../../environments/environment';
 import { BookmarkService } from '../../services/bookmark.service';
 import { ImageKit } from '../../../@core/helpers/ImageKit';
+
+import { Meta } from '@angular/platform-browser';
 @Component({
   selector: 'k-home',
   templateUrl: './home.component.html',
@@ -54,7 +56,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     private metaService: MetaService,
     private bookmarkService: BookmarkService,
 
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private meta:Meta
   ) {
     this.showMoreCountry = false;
     this.isMobile = this.deviceService.isMobile();
