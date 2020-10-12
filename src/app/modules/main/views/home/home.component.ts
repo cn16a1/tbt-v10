@@ -123,7 +123,6 @@ export class HomeComponent implements OnInit, OnDestroy {
         ) {
           this.spotlightTravelInspirations = this.htmlData.inspirations.list_inspirations[0];
           this.listInspiration = this.htmlData.inspirations.list_inspirations;
-          // console.log('listInspiration', this.listInspiration);
         }
 
         // Update Localstorage
