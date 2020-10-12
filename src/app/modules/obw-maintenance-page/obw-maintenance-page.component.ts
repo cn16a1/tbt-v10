@@ -11,6 +11,7 @@ export class ObwMaintenancePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('Maintain page');
   }
 
 }
