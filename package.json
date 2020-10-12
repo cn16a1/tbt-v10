@@ -24,7 +24,8 @@
     "build:prerender": "npm run build:prod && node dist/prerender.js",
     "build:prod": "ng build --prod --aot",
     "serve:prerender": "node static.js",
-    "run-netlify":"ng build --prod && npm run serve"
+    "run-netlify":"ng build --prod && npm run serve",
+    "build:stg:server":"npm run build:client-and-server-stg && node dist/prerender.js && node static.js"
   },
   "private": true,
   "dependencies": {
