@@ -16,6 +16,7 @@ Object.defineProperty(win.document.body.style, 'transform', {
 global['document'] = win.document;
 global['CSS'] = null;
 global['Prism'] = null;
+global['Event'] = null;
 
 import * as ts from 'typescript';
 
