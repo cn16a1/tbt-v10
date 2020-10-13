@@ -27,6 +27,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 import { enableProdMode } from '@angular/core';
+import { ThemeModule } from './src/app/modules/@theme/theme.module';
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
