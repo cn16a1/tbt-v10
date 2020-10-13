@@ -267,11 +267,12 @@ app.use(
 //     }
 //   });
 // });
-// app.get('*', (req, res) => {
-//   res.render(join(DIST_FOLDER, 'index.html'), { req });
-// });
+app.get('*', (req, res) => {
+  res.render(join(DIST_FOLDER, 'index.html'), { req });
+});
 
 // // Start up the Node server
 // app.listen(PORT, () => {
 //   console.log(`Node server listening on http://localhost:${PORT}`);
 // });
+module.exports = app;
