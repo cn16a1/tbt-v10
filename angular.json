@@ -53,7 +53,7 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "node_modules/source-sans-pro/source-sans-pro.css",
               "node_modules/ngx-toastr/toastr.css",
-              "src/app/modules/@theme/styles/styles.scss",
+
               "src/assets/scss/custom/_global-style.scss",
               "src/styles.scss"
             ],
