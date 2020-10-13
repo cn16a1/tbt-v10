@@ -25,7 +25,8 @@
     "build:prod": "ng build --prod --aot",
     "serve:prerender": "node static.js",
     "run-netlify":"ng build --prod && npm run serve",
-    "build:stg:prerender":"npm run build:stg && node dist/server.js"
+    "postinstall":"npm run build:stg",
+    "start:heroku":"node dist/server.js"
   },
   "private": true,
   "dependencies": {
